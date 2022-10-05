@@ -1,0 +1,184 @@
+body::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 1;
+    /* background: url("https://cdn.pixabay.com/photo/2019/05/19/23/47/clouds-4215608_960_720.jpg") no-repeat center center/cover; */
+}
+
+.gmap_canvas {
+    overflow:hidden;
+    background:none!important;
+    width:700px;
+    height:300px;
+    border-radius: 10px;
+
+    /* border: 1px solid red; */
+}
+
+.mapouter{
+    position:relative;
+    text-align:right;
+    height:300px;
+    width:700px;
+}
+
+#weather{
+    display: flex;
+    justify-content: space-evenly;
+    justify-content: center;
+    width: 90%;
+    margin-top: 50px;
+
+    /* border: 1px solid red; */
+}
+
+#box{
+    border: 1px solid rgb(12, 102, 155);
+    height: 90px;
+    background-color: rgb(12, 102, 155);
+    border-radius: 5px;
+}
+
+#box > div> input{
+    width: 250px;
+    height: 35px;
+    font-size: 18px;
+    padding-left: 10px;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+
+#box > div > button{
+    height: 40px;
+    width: 80px;
+    background-color: rgb(46, 43, 43);
+    color: white;
+    border-radius: 10px;
+
+}
+
+#box > div{
+    margin-top: 20px;
+}
+
+#container{
+    width: 400px;
+    height: 400px;
+    margin-right: 100px;
+    /* border: 1px solid red; */
+    color: white;
+    font-family: sans-serif;
+    padding: 15px;
+    font-weight: bold;
+}
+
+img{
+    width: 50px;
+    height: 50px;
+    /* border: 1px solid red; */
+}
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+body{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,115,121,1) 35%, rgba(0,212,255,1) 100%);
+    /* position :absolute; */
+    left: 0px;
+    right: 0px;
+    /* background-color: black; */
+}
+
+body > #box1{
+        width: 100%;
+        height: 400px;
+        margin: auto;
+        /* border: 1px solid rgb(168, 62, 62); */
+        border-radius: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    } 
+    #box1 > div{
+        /* border: 1px solid red; */
+        box-shadow: 0px 0px 5px 0px;
+        width: 130px;
+        height: 270px;
+        margin: 10px;
+        text-align: center;
+        border-radius: 10px;
+        margin-top: 80px;
+
+    }
+
+    /* medium screen */
+    @media screen and (min-width : 651px) and (max-width : 1024px) {
+        #box1{
+            display: block;
+        }
+
+        #weather{
+            display: block;
+        }
+
+        #container{
+            font-size: 16px;
+        }
+        .gmap_canvas{
+            width:500px;
+            height:240px;
+            border-radius: 10px;
+            margin-left: 10px;
+
+        }
+        #city{
+            width: 100px;
+            height: 25px;
+            /* border: 1px solid red; */
+        }
+    }
+    /* small screen */
+    @media screen and (min-width : 320px) and (max-width : 650px) {
+        #box1{
+            display: block;
+        }
+
+        #weather{
+            display: block;
+            /* border: 1px solid red; */
+        }
+
+        #container{
+            font-size: 14px;
+        }
+        .gmap_canvas{
+            margin-left: 5px;
+            width:350px;
+            height:240px;
+            border-radius: 10px;
+            margin-left: 10px;
+
+        }
+        #city{
+            width: 80px;
+            height: 25px;
+        }
+    }
+
+    @media screen and (min-width : 150px) and (max-width : 319px){
+        .gmap_canvas{
+            width:260px;
+            height:200px;
+            border-radius: 10px;
+            margin-left: 5px;
+        }
+        #city{
+            width: 80px;
+            height: 15px;
+        }
+    }
