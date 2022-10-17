@@ -1,49 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
     <title>Document</title>
-
-</head>
-<body>
+  </head>
+  <body>
     <div id="box">
-        <div>
-            <input type="text" id="city" placeholder="City" value="mumbai">
-            <button onclick="getWeather()">Submit</button>
-
-        </div>
+      <div>
+        <input type="text" id="city" placeholder="City" value="Mumbai" />
+        <button onclick="getWeather()">Submit</button>
+      </div>
     </div>
-    <div id="weather">
-        <div id="container">
-        
-        </div>
 
-        <div id="map">
-            <div class="mapouter">
-                <div class="gmap_canvas">
-                    <iframe width="600" height="500" id="gmap_canvas" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
-    
-                    </iframe>
-                    <!-- <a href="https://123movies-to.org">123movies</a>
+    <div id="weather">
+      <div id="container"></div>
+
+      <div id="map">
+        <div class="mapouter">
+          <div class="gmap_canvas">
+            <iframe
+              width="600"
+              height="500"
+              id="gmap_canvas"
+              frameborder="0"
+              scrolling="no"
+              marginheight="0"
+              marginwidth="0"
+            >
+            </iframe>
+            <!-- <a href="https://123movies-to.org">123movies</a>
                     
                     <a href="https://www.embedgooglemap.net">how to copy a map from google maps</a> -->
-                </div>
-            </div>
+          </div>
         </div>
-
+      </div>
     </div>
     <!-- //////////////////////////////////////////////// 7 days weather condition -->
-    <div id="box1" onload="display()">
-
-    </div>
-</body>
+    <h1 id="days7">Weather 7 days</h1>
+    <div id="box1" onload="display()"></div>
+  </body>
 </html>
-<script src="./weather.js">
-
-</script>
-<script src="./7-day.js">
-
-</script>
+<script src="./weather.js"></script>
+<script src="./7-day.js"></script>

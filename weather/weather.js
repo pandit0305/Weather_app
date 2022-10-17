@@ -21,11 +21,11 @@ function appendData(res){
     container.innerHTML=null;
     let Name = document.createElement("h3");
     Name.innerText = `${res.name}`;
-    Name.style.color = "blue";
+    Name.style.color = "#fd1d1d";
     Name.style.fontSize="35px"
     let country = document.createElement("h3");
     country.innerText = `${res.sys.country}`;
-    country.style.color = "coral";
+    country.style.color = "blue";
     country.style.fontSize="40px";
     country.style.marginTop="-20px";
     let temp = document.createElement("p");
@@ -70,7 +70,6 @@ function appendData(res){
     let div3 = document.createElement("div");
     div3.append(div1, div2);
     div3.style.display="flex";
-    div3.style.marginTop="-20px";
     container.append(Name,country,temp, feel, div3);
 
     let map = document.getElementById("gmap_canvas");
