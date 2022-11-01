@@ -12,5 +12,5 @@ A web application for getting weather information based on location.
   HTML | CSS | JavaScript
   
 Here Netlify link
-https://bejewelled-zabaione-697319.netlify.app/
+https://wondrous-cendol-e27124.netlify.app/
 
