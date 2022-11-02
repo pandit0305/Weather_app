@@ -1,5 +1,5 @@
 # Weather_app
-A web application for getting weather information based on location.
+A web application for getting weather information based on location. Weather Information changes according to temperature and time period.
 
 # Features:
   ### User can search their city
